@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>F2F</title>
+    <style>
+    html { scroll-behavior: smooth; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .fade-text { animation: fadeIn 2s forwards; }
+
+    .rectangle {
+      width: 100%;
+      height: 150px;
+      background-color: #36454F;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    button { cursor: pointer; }
+
+    .nav-btn {
+      font-size: 22px;
+      padding: 12px 24px;
+      background-color: #36454F;
+      color: #B2BEB5;
+      border: none;
+    }
+
+    .terminal {
+      width: 520px;
+      background-color: #36454F;
+      border-radius: 10px;
+      overflow: hidden;
+      font-family: "Consolas", "Menlo", monospace;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .term-bar {
+      background-color: #2b3940;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .dot { width: 12px; height: 12px; border-radius: 50%; }
+    .dot.red    { background:#E4D00A; }
+    .dot.yellow { background:#FFBF00; }
+    .dot.green  { background:#C2B280; }
+
+    .term-title {
+      color: #B2BEB5;
+      margin-left: 12px;
+      font-size: 14px;
+    }
+
+    .term-body {
+      padding: 18px 22px;
+      min-height: 200px;
+      color: #B2BEB5;
+      white-space: pre;
+    }
+    </style>
+</head>
+<body style="background-color:#868062;">
+
+    <div class="rectangle">
+      <button class="nav-btn" onclick="document.getElementById('top').scrollIntoView()">Home</button>
+      <button class="nav-btn" onclick="document.getElementById('features').scrollIntoView()">Features</button>
+      <button class="nav-btn" onclick="document.getElementById('download').scrollIntoView()">Download</button>
+    </div>
+
+    <h1 id="top" class="fade-text" style="font-size:80px; color:#E4D00A;">𝐌𝐨𝐯𝐢𝐧𝐠 𝐭𝐨 𝐟𝐨𝐥𝐝𝐞𝐫𝐬 𝐰𝐢𝐭𝐡𝐨𝐮𝐭 𝐚 𝐬𝐞𝐜𝐨𝐧𝐝 𝐰𝐢𝐧𝐝𝐨𝐰.</h1>
+
+    <div style="display:flex; align-items:center; gap:80px;">
+      <img src="F2F.png" width="600" alt="F2F">
+      <div class="terminal">
+        <div class="term-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="term-title">Terminal</span>
+        </div>
+        <div class="term-body">PS C:\&gt; F2F install
+Installing F2F...
+F2F Installed.</div>
+      </div>
+    </div>
+
+    <h1 id="features" style="color:#FFBF00;">Ever got stuck with drag and drop? F2F is here to fix that.</h1>
+    <h1 style="color:#C2B280;">𝐖𝐢𝐭𝐡 𝐅𝟐𝐅, 𝐲𝐨𝐮 𝐜𝐚𝐧 𝐞𝐚𝐬𝐢𝐥𝐲 𝐜𝐚𝐫𝐫𝐲 𝐟𝐢𝐥𝐞𝐬 𝐭𝐨 𝐟𝐨𝐥𝐝𝐞𝐫𝐬 𝐰𝐢𝐭𝐡 𝐨𝐧𝐞 𝐫𝐢𝐠𝐡𝐭 𝐜𝐥𝐢𝐜𝐤.</h1>
+
+    <h1 style="font-size:50px">𝗛𝗼𝘄 𝗶𝘁 𝘄𝗼𝗿𝗸𝘀.<h1>
+<h1>F2F adds "Copy to folder" and "Move to folder" to the right-click menu, so you can send files somewhere without opening a second window and dragging them over.
+     Select your files, right-click, and pick a folder — or make a new one.
+      It works on Windows 10 and 11, installs in one click, and it's free and open source. <h1>
+
+        <h1 style="font-size:50px">𝗜𝗻𝘀𝘁𝗮𝗹𝗹𝗮𝘁𝗶𝗼𝗻𝘀<h1>
+
+    <div id="download" style="text-align:left;">
+
+      <button onclick="window.location.href='https://github.com/turkballbredissus/F2F-Easy-Move/tree/main/F2F'"
+        style="width:300px; height:100px; font-size:25px; background-color:#0096FF; color:#FFFFFF;">
+        Download for Windows
+        <img src="Windows.png" width="40" alt="Windows">
+      </button>
+
+      <br><br>
+
+      <button onclick="window.location.href='https://github.com/turkballbredissus/F2F-Easy-Move'"
+        style="width:300px; height:100px; font-size:30px; background-color:#36454F; color:#B2BEB5;">
+        Github Page
+        <img src="Github.png" width="80" alt="Github">
+      </button>
+
+    </div>
+
+</body>
+</html>
